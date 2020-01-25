@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+/* Box Sizing Reset */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+/* Responsive Images Reset */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Abril Fatface', cursive; */
+
+body {
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+/* Navigation Bar */
+header {
+    background-color: rgb(226, 89, 89);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+header h1 {
+    letter-spacing: 0.2em;
+    font-size: 45px;
+    margin: 0;
+    padding: 0 10px 4px;
+}
+
+header ul {
+    list-style: none;
+    letter-spacing: 0.5em;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+header nav {
+    display: none;
+    width: 100%;
+}
+
+.show header nav {
+    display: block;
+}
+
+.nav-button {
+    font-size: 2.3em;
+    background-color: rgb(226, 89, 89);
+    border: none;
+    color: white;
+    display: block;
+    height: 50px;
+    line-height: 1;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-top: 18px;
+    outline: 0;
+    border: none;
+}
+
+.sr-only {
+    display: none;
+}
+
+header nav a:hover,
+header nav a:active,
+header nav a:focus {
+    background-color: rgb(243, 146, 146);
+}
+
+.hamburger-icon {
+    display: block;
+}
+
+/* Banner image */
+.banner img {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner {
+    background-color: rgb(252, 191, 191);
+}
+
+.credits h1, h2 {
+    font-family: 'Abril Fatface', cursive; 
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.credits h1 {
+    background-color: rgb(243, 146, 146);
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+.credits h2 span {
+    background-color: rgb(255, 217, 0);
+    padding: 10px 15px;
+}
+
+.credits h2 {
+    margin-top: 50px;
+}
+
+.credits p {
+    text-align: center;
+    margin: 0;
+}
+
+.credits a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 0.5px solid rgb(255, 217, 0);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2em;
+}
+
+.credits a:hover {
+    color: rgb(243, 146, 146);
+}
+
+@media (min-width: 900px) {
+    .banner img {
+        max-width: 900px
+    }
+    header nav {
+        display: block;
+    }
+    header ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 10px 5px 10px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .nav-button {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+}
